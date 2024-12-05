@@ -36,7 +36,6 @@ public class Studentcontroller {
 
     @DeleteMapping("/delete")
    public String deleteStudent(@RequestBody Student student) {
-  
         if (student != null) {
             repo.delete(student);
             return  " Deleted Successfulyy.";
